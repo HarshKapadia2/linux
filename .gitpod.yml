@@ -1,0 +1,9 @@
+vscode:
+    extensions:
+        - streetsidesoftware.code-spell-checker
+        - anwar.papyrus-pdf
+        - eamodio.gitlens
+        - vscode-icons-team.vscode-icons
+        - esbenp.prettier-vscode
+        - redhat.vscode-yaml
+        - vscodevim.vim
