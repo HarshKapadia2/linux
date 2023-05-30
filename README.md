@@ -1,10 +1,11 @@
 # Linux
 
--   [The Missing Semester of Your CS Education](#the-missing-semester-of-cs-education)
--   [Shell and Shell scripting](#shell-scripting)
+-   [The Missing Semester of Your CS Education](https://dev.harshkapadia.me/resources#the-missing-semester-of-cs-education)
+-   [Shell and Shell scripting](https://dev.harshkapadia.me/resources#shell-scripting)
 -   [What is POSIX? Why Does it Matter to Linux/UNIX Users?](https://itsfoss.com/posix)
--   [C programming](#c)
+-   [C programming](https://dev.harshkapadia.me/resources#c)
 -   [Networking](https://networking.harshkapadia.me/linux)
+-   ["Reboot Even If System Utterly Broken"](http://www.alexander-miles.com/?p=200)
 -   [KVM](kvm.md)
 -   [Ubuntu Desktop vs Ubuntu Server](https://www.makeuseof.com/tag/difference-ubuntu-desktop-ubuntu-server)
 -   [Systemctl vs Systemd](https://www.reddit.com/r/redhat/comments/qefrhm/systemctl_vs_systemd_vs_service)
