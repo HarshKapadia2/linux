@@ -8,7 +8,9 @@
 -   ["Reboot Even If System Utterly Broken"](http://www.alexander-miles.com/?p=200)
 -   [KVM](kvm.md)
 -   [Ubuntu Desktop vs Ubuntu Server](https://www.makeuseof.com/tag/difference-ubuntu-desktop-ubuntu-server)
--   [Systemctl vs Systemd](https://www.reddit.com/r/redhat/comments/qefrhm/systemctl_vs_systemd_vs_service)
+-   Systemctl
+    -   [Systemctl vs Systemd](https://www.reddit.com/r/redhat/comments/qefrhm/systemctl_vs_systemd_vs_service)
+    -   [What is Systemctl? An In-Depth Overview](https://www.liquidweb.com/kb/what-is-systemctl-an-in-depth-overview)
 -   PCIe
     -   Peripheral Component Interconnect Express
     -   Used to connect hardware devices like graphics cards, NICs, sound cards, capture cards, etc to the motherboard.
