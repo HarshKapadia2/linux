@@ -6,8 +6,30 @@
 -   [C programming](https://dev.harshkapadia.me/resources#c)
 -   [Networking](https://networking.harshkapadia.me/linux)
 -   ["Reboot Even If System Utterly Broken"](http://www.alexander-miles.com/?p=200)
--   [KVM](kvm.md)
+-   [Kernel-based Virtual Machine (KVM)](kvm.md)
 -   [Ubuntu Desktop vs Ubuntu Server](https://www.makeuseof.com/tag/difference-ubuntu-desktop-ubuntu-server)
+-   [User vs group](https://askubuntu.com/questions/740725/what-is-difference-between-group-and-user)
+-   Shell identification and change
+    -   [Arrow keys, Home, End, tab-complete keys not working in shell](https://askubuntu.com/questions/325807/arrow-keys-home-end-tab-complete-keys-not-working-in-shell)
+    -   [How do I check which shell I am using?](https://askubuntu.com/questions/590899/how-do-i-check-which-shell-i-am-using)
+        -   > $0 is the name of the running process. If you use it inside of a shell then it will return the name of the shell. If you use it inside of a script, it will be the name of the script.
+-   Disks and partitions
+    -   [What Is `/dev/sda` in Linux?](https://www.baeldung.com/linux/dev-sda)
+    -   [How Is `/dev/vda` Different From `/dev/sda`?](https://www.baeldung.com/linux/vda-vs-sda)
+    -   [Understanding partition table with `sda1`, `sda2`, `sda5`](https://unix.stackexchange.com/questions/83781/understanding-partition-table-with-sda1-sda2-sda5)
+    -   [Difference between `sdX` and `vdX`](https://unix.stackexchange.com/questions/145332/difference-between-sdx-and-vdx)
+    -   [What is the difference between `/dev/sda` and `/dev/hda`?](https://unix.stackexchange.com/questions/175848/what-is-the-difference-between-dev-sda-and-dev-hda)
+    -   [Names for ATA and SATA disks in Linux](https://unix.stackexchange.com/questions/2447/names-for-ata-and-sata-disks-in-linux)
+    -   [How to list disks, partitions and filesystems in Linux?](https://unix.stackexchange.com/questions/157154/how-to-list-disks-partitions-and-filesystems-in-linux)
+-   Desktop Environments
+    -   [What is KDE, GTK, GTK+, QT, and/or GNOME?](https://askubuntu.com/questions/249150/what-is-kde-gtk-gtk-qt-and-or-gnome)
+        -   [Full form of KDE](https://fullforms.com/KDE)
+        -   [Full form of Qt](https://stackoverflow.com/questions/22361655/what-does-qt-stand-for)
+        -   GNOME: GNU Network Object Model Environment
+    -   [KDE Vs GNOME Vs Xfce; Which is the Best Desktop Environment and Why?](https://cloudzy.com/blog/kde-vs-gnome-vs-xfce)
+    -   [GNOME vs Xfce vs KDE](https://www.vpsserver.com/gnome-vs-xfce-vs-kde)
+    -   [Is there a breakdown of the differences between GNOME, KDE, and Xfce desktop environments?](https://superuser.com/questions/88249/is-there-a-breakdown-of-the-differences-between-gnome-kde-and-xfce-desktop-env)
+-   [AMD's EPYC Rome Chips Crash After 1,044 Days of Uptime](https://www.tomshardware.com/news/amds-epyc-rome-chips-could-hang-after-1044-days-of-uptime)
 -   Systemctl
     -   [Systemctl vs Systemd](https://www.reddit.com/r/redhat/comments/qefrhm/systemctl_vs_systemd_vs_service)
     -   [What is Systemctl? An In-Depth Overview](https://www.liquidweb.com/kb/what-is-systemctl-an-in-depth-overview)
