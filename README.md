@@ -29,7 +29,11 @@
     -   [KDE Vs GNOME Vs Xfce; Which is the Best Desktop Environment and Why?](https://cloudzy.com/blog/kde-vs-gnome-vs-xfce)
     -   [GNOME vs Xfce vs KDE](https://www.vpsserver.com/gnome-vs-xfce-vs-kde)
     -   [Is there a breakdown of the differences between GNOME, KDE, and Xfce desktop environments?](https://superuser.com/questions/88249/is-there-a-breakdown-of-the-differences-between-gnome-kde-and-xfce-desktop-env)
--   [AMD's EPYC Rome Chips Crash After 1,044 Days of Uptime](https://www.tomshardware.com/news/amds-epyc-rome-chips-could-hang-after-1044-days-of-uptime)
+    -   [What is gdm3, kdm, lightdm? How to install and remove them?](https://askubuntu.com/questions/829108/what-is-gdm3-kdm-lightdm-how-to-install-and-remove-them)
+-   Advanced Micro Devices (AMD)
+    -   [AMD's EPYC Rome Chips Crash After 1,044 Days of Uptime](https://www.tomshardware.com/news/amds-epyc-rome-chips-could-hang-after-1044-days-of-uptime)
+    -   [AMD CCD and CCX in Ryzen Processors Explained](https://www.hardwaretimes.com/amd-ccd-and-ccx-in-ryzen-processors-explained)
+    -   [How AMD Zen Almost Didn't Make It](https://www.youtube.com/watch?v=RTA3Ls-WAcw)
 -   Systemctl
     -   [Systemctl vs Systemd](https://www.reddit.com/r/redhat/comments/qefrhm/systemctl_vs_systemd_vs_service)
     -   [What is Systemctl? An In-Depth Overview](https://www.liquidweb.com/kb/what-is-systemctl-an-in-depth-overview)
@@ -41,3 +45,47 @@
     -   [Understanding M.2, SATA, PCIe and NVMe SSDs](https://www.crucial.com/articles/about-ssd/m2-with-pcie-or-sata)
     -   [SATA vs SAS vs PCIe](https://www.youtube.com/watch?v=JJi-NGZeyxA)
 -   [Motherboards Explained](https://www.youtube.com/watch?v=BBAvz6jZEik)
+-   System on Chip (SoC)
+    -   [What is a System on Chip (SoC)?](https://anysilicon.com/what-is-a-system-on-chip-soc)
+    -   [What is the difference between a motherboard and an SOC?](https://www.quora.com/What-is-the-difference-between-a-motherboard-and-an-SOC)
+-   [MiB vs MB](https://digilent.com/blog/mib-vs-mb-whats-the-difference)
+-   Commands to check basic information about a system
+    -   CPU
+        -   No. of cores, no. of sockets, SMT on/off, CPU speed/frequency: `lscpu`
+        -   NUMA config: `lscpu`, `lstopo` (enable X11 Forwarding for GUI!)
+    -   OS and Kernel versions
+        -   OS version: `lsb_release -a` (Will not work for all Linux distributions.)
+        -   Kernel version: `uname -srm`
+        -   [4 Useful Commands to Check Linux Version](https://www.howtouselinux.com/post/check-linux-version)
+    -   BIOS version
+        -   `sudo dmidecode -t bios` ([More details](https://www.baeldung.com/linux/get-bios-data))
+    -   Memory (RAM) config
+        -   Speed: `sudo dmidecode -t memory`
+        -   [How to Determine the Number of RAM Slots in Use](https://www.baeldung.com/linux/ram-slots-in-use)
+        -   DIMMS per channel (DPC): `sudo dmidecode -t memory | grep "Bank Locator"`
+    -   Generic commands: `htop`, `lstopo` (enable X11 Forwarding!)
+    -   [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) (Windows) or CPU-X (Linux)
+-   CPU Speed, CPU Clock
+    -   [What is Processor Speed and Why Does It Matter?](https://www.hp.com/us-en/shop/tech-takes/what-is-processor-speed)
+    -   [What Is Clock Speed?](https://www.intel.com/content/www/us/en/gaming/resources/cpu-clock-speed.html)
+    -   [Intructions vs cycles per second - what is actually measured in Hertz?](https://stackoverflow.com/questions/62577798/intructions-vs-cycles-per-second-what-is-actually-measured-in-hertz)
+    -   [Difference between clock cycle, machine cycle and instruction cycle of the CPU](https://electronics.stackexchange.com/questions/529562/difference-between-clock-cycle-machine-cycle-and-instruction-cycle-of-the-cpu)
+    -   [What is a clock cycle and clock speed?](https://stackoverflow.com/questions/43651954/what-is-a-clock-cycle-and-clock-speed)
+    -   [Why do we need a CPU clock](https://superuser.com/questions/1021499/why-do-we-need-a-cpu-clock)
+    -   [Inside a CPU, what happens in a single clock cycle?](https://electronics.stackexchange.com/questions/373417/inside-a-cpu-what-happens-in-a-single-clock-cycle)
+-   Non-Uniform Memory Access (NUMA)
+    -   [What is NUMA?](https://www.techtarget.com/whatis/definition/NUMA-non-uniform-memory-access)
+    -   [NUMA (Wikipedia)](https://en.wikipedia.org/wiki/Non-uniform_memory_access)
+-   Desktop Management Information (DMI)
+    -   [What is DMI?](https://www.linuxquestions.org/questions/linux-newbie-8/what-is-dmi-445952)
+    -   [DMI vs SMBIOS](https://en.wikipedia.org/wiki/Desktop_Management_Interface#DMI_and_SMBIOS)
+        -   [Does UEFI replace standards like SMBIOS and ACPI?](https://stackoverflow.com/questions/66603762/does-uefi-replace-standards-like-smbios-and-acpi)
+-   Memory bandwidth
+    -   [Memory Bandwidth (Wikipedia)](https://en.wikipedia.org/wiki/Memory_bandwidth)
+    -   [Computer Memory Speed and Latency](https://www.lifewire.com/pc-memory-speed-and-latency-832450)
+    -   [The Complete Guide to RAM Speeds](https://whatintech.com/ddr4-2400-vs-2666-vs-3000-vs-3200-vs-3600-vs-4000-mhz)
+-   Dual In-line Memory Module (DIMM)
+    -   [What Is a Dual In-line Memory Module (DIMM)? Meaning, Characteristics, and Types](https://www.spiceworks.com/tech/tech-general/articles/what-is-dimm)
+    -   [Single Rank vs Dual Rank RAM: Differences & Performance Impact](https://www.cgdirector.com/single-rank-vs-dual-rank-ram)
+-   [Why aren't SSDs as fast as RAM?](https://www.reddit.com/r/pcmasterrace/comments/g6xgq9/comment/fodrvce)
+-   [Why we don't use RAM drive as the Hard Drive Disk?](https://superuser.com/questions/1357655/why-we-dont-use-ram-drive-as-the-hard-drive-disk)
