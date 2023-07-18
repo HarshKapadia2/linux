@@ -34,6 +34,7 @@
     -   [AMD's EPYC Rome Chips Crash After 1,044 Days of Uptime](https://www.tomshardware.com/news/amds-epyc-rome-chips-could-hang-after-1044-days-of-uptime)
     -   [AMD CCD and CCX in Ryzen Processors Explained](https://www.hardwaretimes.com/amd-ccd-and-ccx-in-ryzen-processors-explained)
     -   [How AMD Zen Almost Didn't Make It](https://www.youtube.com/watch?v=RTA3Ls-WAcw)
+    -   [Secrets of a $182 Billion Chip Maker: AMD's Labs](https://www.youtube.com/watch?v=7H4eg2jOvVw)
 -   Systemctl
     -   [Systemctl vs Systemd](https://www.reddit.com/r/redhat/comments/qefrhm/systemctl_vs_systemd_vs_service)
     -   [What is Systemctl? An In-Depth Overview](https://www.liquidweb.com/kb/what-is-systemctl-an-in-depth-overview)
@@ -89,3 +90,5 @@
     -   [Single Rank vs Dual Rank RAM: Differences & Performance Impact](https://www.cgdirector.com/single-rank-vs-dual-rank-ram)
 -   [Why aren't SSDs as fast as RAM?](https://www.reddit.com/r/pcmasterrace/comments/g6xgq9/comment/fodrvce)
 -   [Why we don't use RAM drive as the Hard Drive Disk?](https://superuser.com/questions/1357655/why-we-dont-use-ram-drive-as-the-hard-drive-disk)
+-   [OEM vs ODM vs OBM](https://www.scadatw.com/odm)
+-   Computerraria: [I Made a 32-bit Computer Inside Terraria](https://www.youtube.com/watch?v=zXPiqk0-zDY)
