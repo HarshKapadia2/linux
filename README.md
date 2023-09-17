@@ -109,3 +109,4 @@
             -   [MINIX: Intel's hidden in-chip operating system](https://www.zdnet.com/article/minix-intels-hidden-in-chip-operating-system)
             -   [What is MINIX? The most popular OS in the world, thanks to Intel](https://www.networkworld.com/article/3236064/minix-the-most-popular-os-in-the-world-thanks-to-intel.html)
             -   Tanenbaum also wrote [An Open Letter to Intel](https://www.cs.vu.nl/~ast/intel).
+-   [Cygwin vs MinGW vs MSys/Msys2 vs WSL](https://www.sobyte.net/post/2021-11/cygwin-mingw-msys)
