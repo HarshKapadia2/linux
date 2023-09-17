@@ -35,6 +35,7 @@
     -   [AMD CCD and CCX in Ryzen Processors Explained](https://www.hardwaretimes.com/amd-ccd-and-ccx-in-ryzen-processors-explained)
     -   [How AMD Zen Almost Didn't Make It](https://www.youtube.com/watch?v=RTA3Ls-WAcw)
     -   [Secrets of a $182 Billion Chip Maker: AMD's Labs](https://www.youtube.com/watch?v=7H4eg2jOvVw)
+    -   [AMD's CPU Analysis Lab Full Interview (Lasers, Scopes, & Silicon)](https://www.youtube.com/watch?v=hVSSOs9Z-uY)
 -   Systemctl
     -   [Systemctl vs Systemd](https://www.reddit.com/r/redhat/comments/qefrhm/systemctl_vs_systemd_vs_service)
     -   [What is Systemctl? An In-Depth Overview](https://www.liquidweb.com/kb/what-is-systemctl-an-in-depth-overview)
@@ -92,3 +93,19 @@
 -   [Why we don't use RAM drive as the Hard Drive Disk?](https://superuser.com/questions/1357655/why-we-dont-use-ram-drive-as-the-hard-drive-disk)
 -   [OEM vs ODM vs OBM](https://www.scadatw.com/odm)
 -   Computerraria: [I Made a 32-bit Computer Inside Terraria](https://www.youtube.com/watch?v=zXPiqk0-zDY)
+-   Niceness
+    -   [how greedy are your processes?](https://www.youtube.com/watch?v=GsF8R6DBxSg)
+    -   [Difference between nice value and priority in the top output](https://superuser.com/questions/203657/difference-between-nice-value-and-priority-in-the-top-output/877353#877353)
+-   Anil Harwani told us about [the Tanenbaum-Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate) on [OTC CatchUp #145](https://catchup.ourtech.community/summary/145), which was an argument where Tanenbaum was trying to prove why a Microkernel architecture (Tanenbaum's OS Minix had that architecture.) is better than a Monolithic Kernel architecture that Torvald's Linux has.
+    -   Kernel architectures
+        -   [Microkernel vs Monolithic Kernel](https://stackoverflow.com/questions/4537850/what-is-difference-between-monolithic-and-micro-kernel)
+        -   [Difference between Microkernel and Monolithic Kernel](https://www.geeksforgeeks.org/difference-between-microkernel-and-monolithic-kernel)
+    -   Minix
+        -   Tanenbaum initially created the [Minix](https://en.wikipedia.org/wiki/Minix) Operating System for educational purposes.
+        -   Anil also told us how Minix was found inside the [Intel Management Engine](https://en.wikipedia.org/wiki/Intel_Management_Engine), which was a big deal, as Minix, whose goal was never to have military-grade security, was being used on billions of machines at a privilege level that is higher than the kernel, and that made billions of machines vulnerable. Also, this implies that Minix is the most used OS on the planet.
+            -   [Replace Your Exploit-Ridden Firmware with Linux](https://www.youtube.com/watch?v=iffTJ1vPCSo)
+                -   The first 12 minutes of this video is sufficient to understand how vulnerable systems are.
+                -   [Protection Rings (-3, -2, -1, 0, 1, 2, 3)](https://security.stackexchange.com/questions/129098/what-is-protection-ring-1)
+            -   [MINIX: Intel's hidden in-chip operating system](https://www.zdnet.com/article/minix-intels-hidden-in-chip-operating-system)
+            -   [What is MINIX? The most popular OS in the world, thanks to Intel](https://www.networkworld.com/article/3236064/minix-the-most-popular-os-in-the-world-thanks-to-intel.html)
+            -   Tanenbaum also wrote [An Open Letter to Intel](https://www.cs.vu.nl/~ast/intel).
