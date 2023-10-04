@@ -54,6 +54,8 @@ Booting the the process of loading and starting an Operating System.
 
 -   [PC Booting: How PC Boots](https://www.youtube.com/watch?v=ZplB2v2eMas)
 -   [Booting an Operating System](https://www.youtube.com/watch?v=7D4qiFIosWk)
--   [What is Master Boot Record (MBR)?](https://www.youtube.com/watch?v=1T26DpuKnVs)
+-   Master Boot Record (MBR)
+    -   [What is Master Boot Record (MBR)?](https://www.youtube.com/watch?v=1T26DpuKnVs)
+    -   [MBR structure](https://superuser.com/a/976163)
 -   [Linux Boot Process](https://www.youtube.com/watch?v=ZtVpz5VWjAs)
 -   [How does an OS boot? // Source Dive](https://www.youtube.com/watch?v=KkenLT8S9Hs)
