@@ -2,6 +2,10 @@
 
 ## Table of Contents
 
+-   [Introduction](#introduction)
+-   [The OS Boot Process](#the-os-boot-process)
+-   [Resources](#resources)
+
 ## Introduction
 
 Booting the the process of loading and starting an Operating System.
@@ -15,7 +19,7 @@ Booting the the process of loading and starting an Operating System.
     -   All devices get power and initialize themselves.
     -   Memory layout and mapping is done.
     -   Every register is set to zero, except Code Segment (CS) and Instruction Pointer (IP), which are set to `0xf000` and `0xfff0` respectively.
-        -   Thus, the physical address = (CS << 4) + IP = `0xf0000` + `0xfff0` = `0xffff0`
+        -   Thus, the `physical address = (CS << 4) + IP = (0xf000 << 4) + 0xfff0 = 0xf0000 + 0xfff0 = 0xffff0`
             -   This physical address is the place where the CPU starts executing instructions.
     -   The CPU is activated in Real Mode and it starts executing from `0xffff0` (or `ffff0h`), which is a memory location in the BIOS chip and not in the RAM.
         -   Real Mode
@@ -23,8 +27,9 @@ Booting the the process of loading and starting an Operating System.
                 -   This is because there are 20 physical address bus lines available. (2^20 = 1048576 = 1 MB)
             -   Available registers (Eg: `AX`) are of size 16 bits, so two registers are combined to give the physical address.
                 -   Logical address (LBA) = segment:offset
-                -   Physical address = (segment << 4) + offset
+                -   `Physical address = (segment << 4) + offset`
                     -   The segments are segments/parts of the addressable 1 MB of RAM and the offsets are offsets into that segment.
+                    -   Eg: If the segment is `0xf000` and the offset is `0xfff0`, then the `physical address = (CS << 4) + IP = (0xf000 << 4) + 0xfff0 = 0xf0000 + 0xfff0 = 0xffff0`
 -   Basic Input/Output System (BIOS) takes over.
     -   Placed in Flash/EPROM Non-Volatile Memory.
     -   In a multi-processor environment, one processor is a Boot Processor (BSP) which executes all instructions and the others are Application Processors (APs).
