@@ -39,7 +39,7 @@ Booting the the process of loading and starting an Operating System.
         -   Plug-and-Play (PnP) device detection.
     -   Finds Master Boot Record (MBR) in the first sector of a device (the hard disk, SSD, USB, etc.) that is usually 512 bytes in size, loads it into RAM at position `0x7c00`, jumps to that location and starts executing.
         -   MBR is a 512 byte sector that's logically split into three sections.
-            -   The first 446 bytes is reserved for a program, which is usually a Bootloader. (Eg: GRUB)
+            -   The first 446 bytes is reserved for a program, which is usually a Bootloader. (Eg: [GRUB](https://www.gnu.org/software/grub))
             -   The next 64 bytes (16x4 bytes) are for a partition table with four partitions in it.
             -   The last two bytes are for the Boot Signature bytes `0x55` (or `55h`) and `0xAA`(or `AAh`) in order, that identify that a particular sector is the MBR.
                 -   If this signature is not found in the first sector, then the next device is searched.
@@ -63,4 +63,6 @@ Booting the the process of loading and starting an Operating System.
     -   [What is Master Boot Record (MBR)?](https://www.youtube.com/watch?v=1T26DpuKnVs)
     -   [MBR structure](https://superuser.com/a/976163)
 -   [Linux Boot Process](https://www.youtube.com/watch?v=ZtVpz5VWjAs)
+-   [Boot Sequence](https://wiki.osdev.org/Boot_Sequence)
+-   [GRUB Boot Stages](https://www.system-rescue.org/disk-partitioning/Grub-boot-stages)
 -   [How does an OS boot? // Source Dive](https://www.youtube.com/watch?v=KkenLT8S9Hs)
