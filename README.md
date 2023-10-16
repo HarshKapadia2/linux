@@ -8,6 +8,7 @@
 -   [C programming](https://dev.harshkapadia.me/resources#c)
 -   [Networking](https://networking.harshkapadia.me/linux)
 -   [Operating System Boot Process](os-boot-process.md)
+-   [In-depth: ELF - The Extensible & Linkable Format](https://www.youtube.com/watch?v=nC1U1LJQL8o)
 -   ["Reboot Even If System Utterly Broken"](http://www.alexander-miles.com/?p=200)
 -   [Kernel-based Virtual Machine (KVM)](kvm.md)
 -   [Ubuntu Desktop vs Ubuntu Server](https://www.makeuseof.com/tag/difference-ubuntu-desktop-ubuntu-server)
