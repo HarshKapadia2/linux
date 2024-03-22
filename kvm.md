@@ -14,3 +14,5 @@
     -   Ubuntu package: [libnss-libvirt](https://www.ubuntuupdates.org/package/core/jammy/universe/base/libnss-libvirt)
 -   [What is AMD Virtualization (AMD-V)?](https://www.techtarget.com/searchitoperations/definition/AMD-V-AMD-virtualization)
 -   [What is QEMU?](https://ubuntu.com/server/docs/virtualization-qemu)
+-   [Difference between KVM and QEMU](https://serverfault.com/questions/208693/difference-between-kvm-and-qemu)
+-   [What is the difference between QEMU, KVM, Libvirt...](https://stackoverflow.com/questions/60907105/what-is-the-difference-between-qemu-kvm-libvirt-and-how-to-use-with-vagrant/61324275#61324275)
