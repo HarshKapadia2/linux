@@ -26,6 +26,13 @@
     -   [What is the difference between `/dev/sda` and `/dev/hda`?](https://unix.stackexchange.com/questions/175848/what-is-the-difference-between-dev-sda-and-dev-hda)
     -   [Names for ATA and SATA disks in Linux](https://unix.stackexchange.com/questions/2447/names-for-ata-and-sata-disks-in-linux)
     -   [How to list disks, partitions and filesystems in Linux?](https://unix.stackexchange.com/questions/157154/how-to-list-disks-partitions-and-filesystems-in-linux)
+    -   Mounting, partitioning and formatting
+        -   [Mounting a device — role of /dev, /media and /mnt, and the mount command](https://unix.stackexchange.com/questions/13975/mounting-a-device-role-of-dev-media-and-mnt-and-the-mount-command)
+        -   [Correct way to mount a hard drive](https://unix.stackexchange.com/questions/72125/correct-way-to-mount-a-hard-drive)
+        -   [Mount Drives in Ubuntu Command Line](https://learnubuntu.com/mount-drives)
+        -   [Deleting All Partitions From the Command Line](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
+        -   [How to Format Disk Partitions in Linux](https://phoenixnap.com/kb/linux-format-disk)
+        -   [Quickest way to wipe an SSD clean of all its partitions for repartitioning in Linux?](https://superuser.com/questions/1284450/quickest-way-to-wipe-an-ssd-clean-of-all-its-partitions-for-repartitioning-in-li)
 -   Desktop Environments
     -   [What is KDE, GTK, GTK+, QT, and/or GNOME?](https://askubuntu.com/questions/249150/what-is-kde-gtk-gtk-qt-and-or-gnome)
         -   [Full form of KDE](https://fullforms.com/KDE)
@@ -90,13 +97,6 @@
 -   Non-Uniform Memory Access (NUMA)
     -   [What is NUMA?](https://www.techtarget.com/whatis/definition/NUMA-non-uniform-memory-access)
     -   [NUMA (Wikipedia)](https://en.wikipedia.org/wiki/Non-uniform_memory_access)
--   Mounting, partitioning and formatting
-    -   [Mounting a device — role of /dev, /media and /mnt, and the mount command](https://unix.stackexchange.com/questions/13975/mounting-a-device-role-of-dev-media-and-mnt-and-the-mount-command)
-    -   [Correct way to mount a hard drive](https://unix.stackexchange.com/questions/72125/correct-way-to-mount-a-hard-drive)
-    -   [Mount Drives in Ubuntu Command Line](https://learnubuntu.com/mount-drives)
-    -   [Deleting All Partitions From the Command Line](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
-    -   [How to Format Disk Partitions in Linux](https://phoenixnap.com/kb/linux-format-disk)
-    -   [Quickest way to wipe an SSD clean of all its partitions for repartitioning in Linux?](https://superuser.com/questions/1284450/quickest-way-to-wipe-an-ssd-clean-of-all-its-partitions-for-repartitioning-in-li)
 -   Redundant Array of Independent Disks (RAID)
     -   [What is RAID Storage? Meaning, Types, and Working](https://www.spiceworks.com/tech/data-management/articles/what-is-raid-storage)
     -   [Should I use Raid 6 or Raid Z2? What are the advantages/disadvantages of each?](https://www.reddit.com/r/homelab/comments/6lisv9/should_i_use_raid_6_or_raid_z2_what_are_the)
@@ -152,6 +152,10 @@
     -   ...
     -   Security considerations of x86 vs x64
 -   [Assembly](https://github.com/HarshKapadia2/assembly)
+-   X Server
+    -   [What is the X server?](https://askubuntu.com/questions/7881/what-is-the-x-server)
+    -   [What are X server, display and screen?](https://unix.stackexchange.com/questions/503806/what-are-x-server-display-and-screen)
+    -   [X Window authorization](https://en.wikipedia.org/wiki/X_Window_authorization)
 -   Processing hardware
     -   [CPU vs GPU vs TPU vs DPU vs QPU](https://www.youtube.com/watch?v=r5NQecwZs1A)
     -   [CPU, GPU.....DPU?](https://www.youtube.com/watch?v=pQrM5L6C-FQ)
