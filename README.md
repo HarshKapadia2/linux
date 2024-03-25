@@ -72,18 +72,34 @@
 -   Commands to check basic information about a system
     -   CPU
         -   No. of cores, no. of sockets, SMT on/off, CPU speed/frequency: `lscpu`
-        -   CPU topology and/or NUMA config: `lscpu`, `lstopo` (enable X11 Forwarding for GUI!), `numactl`
-            -   [Interpret the output of lstopo](https://unix.stackexchange.com/questions/113544/interpret-the-output-of-lstopo)
+        -   CPU topology and/or NUMA config
+            -   `lscpu`
+            -   `lstopo` (enable X11 Forwarding for GUI!)
+                -   [Interpret the output of lstopo](https://unix.stackexchange.com/questions/113544/interpret-the-output-of-lstopo)
+            -   `numactl`
     -   OS and Kernel versions
-        -   OS version: `lsb_release -a` (Will not work for all Linux distributions.)
+        -   OS version
+            -   `lsb_release -a` (Will not work for all Linux distributions.)
+            -   `cat /etc/os-release`
         -   Kernel version: `uname -srm`
         -   [4 Useful Commands to Check Linux Version](https://www.howtouselinux.com/post/check-linux-version)
-    -   BIOS version
+    -   BIOS
         -   `sudo dmidecode -t bios` ([More details](https://www.baeldung.com/linux/get-bios-data))
     -   Memory (RAM) config
         -   Speed: `sudo dmidecode -t memory`
+        -   `free -h`
         -   [How to Determine the Number of RAM Slots in Use](https://www.baeldung.com/linux/ram-slots-in-use)
         -   DIMMS per channel (DPC): `sudo dmidecode -t memory | grep "Bank Locator"`
+        -   [How do I tell if my Memory is ECC or Non-ECC?](https://superuser.com/questions/893560/how-do-i-tell-if-my-memory-is-ecc-or-non-ecc)
+    -   Storage (disk)
+        -   `df -h`
+        -   `lsblk`
+        -   `fdisk -l`
+    -   Network
+        -   `ip a`
+    -   Motherboard
+        -   `sudo dmidecode -t baseboard`
+        -   `ipmitool`
     -   Generic commands: `htop`, `lstopo` (enable X11 Forwarding!)
     -   [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) (Windows) or CPU-X (Linux)
 -   CPU Speed, CPU Clock
@@ -109,13 +125,18 @@
     -   [What is DMI?](https://www.linuxquestions.org/questions/linux-newbie-8/what-is-dmi-445952)
     -   [DMI vs SMBIOS](https://en.wikipedia.org/wiki/Desktop_Management_Interface#DMI_and_SMBIOS)
         -   [Does UEFI replace standards like SMBIOS and ACPI?](https://stackoverflow.com/questions/66603762/does-uefi-replace-standards-like-smbios-and-acpi)
--   Memory bandwidth
-    -   [Memory Bandwidth (Wikipedia)](https://en.wikipedia.org/wiki/Memory_bandwidth)
-    -   [Computer Memory Speed and Latency](https://www.lifewire.com/pc-memory-speed-and-latency-832450)
-    -   [The Complete Guide to RAM Speeds](https://whatintech.com/ddr4-2400-vs-2666-vs-3000-vs-3200-vs-3600-vs-4000-mhz)
--   Dual In-line Memory Module (DIMM)
-    -   [What Is a Dual In-line Memory Module (DIMM)? Meaning, Characteristics, and Types](https://www.spiceworks.com/tech/tech-general/articles/what-is-dimm)
-    -   [Single Rank vs Dual Rank RAM: Differences & Performance Impact](https://www.cgdirector.com/single-rank-vs-dual-rank-ram)
+-   Memory
+    -   Memory bandwidth
+        -   [Memory Bandwidth (Wikipedia)](https://en.wikipedia.org/wiki/Memory_bandwidth)
+        -   [Computer Memory Speed and Latency](https://www.lifewire.com/pc-memory-speed-and-latency-832450)
+        -   [The Complete Guide to RAM Speeds](https://whatintech.com/ddr4-2400-vs-2666-vs-3000-vs-3200-vs-3600-vs-4000-mhz)
+    -   Dual In-line Memory Module (DIMM)
+        -   [What Is a Dual In-line Memory Module (DIMM)? Meaning, Characteristics, and Types](https://www.spiceworks.com/tech/tech-general/articles/what-is-dimm)
+        -   [Single Rank vs Dual Rank RAM: Differences & Performance Impact](https://www.cgdirector.com/single-rank-vs-dual-rank-ram)
+    -   Memory Interleaving
+        -   [Interleaved memory](https://en.wikipedia.org/wiki/Interleaved_memory)
+        -   [What is Memory Interleaving? & Advantages](https://datatrained.com/post/memory-interleaving)
+    -   [Memory refresh](https://en.wikipedia.org/wiki/Memory_refresh)
 -   [Why aren't SSDs as fast as RAM?](https://www.reddit.com/r/pcmasterrace/comments/g6xgq9/comment/fodrvce)
 -   [Why we don't use RAM drive as the Hard Drive Disk?](https://superuser.com/questions/1357655/why-we-dont-use-ram-drive-as-the-hard-drive-disk)
 -   [OEM vs ODM vs OBM](https://www.scadatw.com/odm)
@@ -156,6 +177,10 @@
     -   [What is the X server?](https://askubuntu.com/questions/7881/what-is-the-x-server)
     -   [What are X server, display and screen?](https://unix.stackexchange.com/questions/503806/what-are-x-server-display-and-screen)
     -   [X Window authorization](https://en.wikipedia.org/wiki/X_Window_authorization)
+-   Locality of Reference
+    -   [Locality of reference](https://en.wikipedia.org/wiki/Locality_of_reference)
+        -   Mainly Temporal and Spatial Locality
+    -   [Non-Temporal Data](https://www.nic.uoregon.edu/~khuck/ts/acumem-report/manual_html/ch05s03.html)
 -   Processing hardware
     -   [CPU vs GPU vs TPU vs DPU vs QPU](https://www.youtube.com/watch?v=r5NQecwZs1A)
     -   [CPU, GPU.....DPU?](https://www.youtube.com/watch?v=pQrM5L6C-FQ)
