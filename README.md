@@ -128,6 +128,7 @@
             -   [MINIX: Intel's hidden in-chip operating system](https://www.zdnet.com/article/minix-intels-hidden-in-chip-operating-system)
             -   [What is MINIX? The most popular OS in the world, thanks to Intel](https://www.networkworld.com/article/3236064/minix-the-most-popular-os-in-the-world-thanks-to-intel.html)
             -   Tanenbaum also wrote [An Open Letter to Intel](https://www.cs.vu.nl/~ast/intel).
+        -   [USBAnywhere and the History of Baseboard Management Controllers (BMCs)](https://www.youtube.com/watch?v=5PcsLSW32Rc)
 -   [Cygwin vs MinGW vs MSys/Msys2 vs WSL](https://www.sobyte.net/post/2021-11/cygwin-mingw-msys)
 -   Northbridge vs Southbridge
     -   [What are the north and south bridges of a motherboard?](https://superuser.com/questions/1152648/what-are-the-north-and-south-bridges-of-a-motherboard)
