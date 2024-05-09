@@ -142,6 +142,7 @@
     -   ...
     -   Security considerations of x86 vs x64
 -   [Assembly](https://github.com/HarshKapadia2/assembly)
+-   [Bit and Byte Ordering (Endianness)](bit-byte-ordering.md)
 -   X Server
     -   [What is the X server?](https://askubuntu.com/questions/7881/what-is-the-x-server)
     -   [What are X server, display and screen?](https://unix.stackexchange.com/questions/503806/what-are-x-server-display-and-screen)
