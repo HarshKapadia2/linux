@@ -11,7 +11,7 @@
 -   [Linux source code cross reference](https://elixir.bootlin.com/linux/v6.6.8/source)
 -   [In-depth: ELF - The Extensible & Linkable Format](https://www.youtube.com/watch?v=nC1U1LJQL8o)
 -   ["Reboot Even If System Utterly Broken"](http://www.alexander-miles.com/?p=200)
--   [Kernel-based Virtual Machine (KVM)](kvm.md)
+-   [Kernel-based Virtual Machine (KVM) and Quick Emulator (QEMU)](kvm-qemu.md)
 -   [Ubuntu Desktop vs Ubuntu Server](https://www.makeuseof.com/tag/difference-ubuntu-desktop-ubuntu-server)
 -   [User vs group](https://askubuntu.com/questions/740725/what-is-difference-between-group-and-user)
 -   Shell identification and change
