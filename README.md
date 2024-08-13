@@ -4,6 +4,7 @@
 -   [Putting the "You" in CPU](https://cpu.land/editions/one-pager)
 -   [Modern Operating Systems by Andrew Tanenbaum (4th Edition)](files/books/tanenbaum-modern-operating-systems-4th-edition.pdf)
 -   [Shell and Shell scripting](https://dev.harshkapadia.me/resources#shell-scripting)
+-   [Read the Source Code of Shell Commands](https://www.baeldung.com/linux/read-source-code-shell-commands)
 -   [What is POSIX? Why Does it Matter to Linux/UNIX Users?](https://itsfoss.com/posix)
 -   [C programming](https://dev.harshkapadia.me/resources#c)
 -   [Networking](https://networking.harshkapadia.me/linux)
