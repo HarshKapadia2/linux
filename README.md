@@ -20,6 +20,7 @@
 -   [RAID](#raid)
 -   [DMI](#dmi)
 -   [Memory](#memory)
+    -   [Memory Layout and Compilers](#memory-layout-and-compilers)
     -   [Memory Bandwidth](#memory-bandwidth)
     -   [DIMM](#dimm)
     -   [Memory Interleaving](#memory-interleaving)
@@ -171,6 +172,22 @@
 -   [Memory refresh](https://en.wikipedia.org/wiki/Memory_refresh)
 -   [Why aren't SSDs as fast as RAM?](https://www.reddit.com/r/pcmasterrace/comments/g6xgq9/comment/fodrvce)
 -   [Why we don't use RAM drive as the Hard Drive Disk?](https://superuser.com/questions/1357655/why-we-dont-use-ram-drive-as-the-hard-drive-disk)
+
+### Memory Layout and Compilers
+
+-   [Buffer Overflow 3: An Assembly Language](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow1b.html)
+-   [Buffer Overflow 4: A Compiler, Assembler, Linker & Loader](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow1c.html)
+-   [Buffer Overflow 5: C/C++ Function Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2.html)
+-   [Buffer Overflow 6: The Function Stack](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2a.html)
+-   [Buffer Overflow 7: The Stack Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow3.html)
+-   [Memory Layout of C Programs](https://www.geeksforgeeks.org/memory-layout-of-c-program)
+-   [What and where are the stack and heap?](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
+-   [Memory Segments](https://www.cs.colostate.edu/~cs253/Fall20/Lecture/MemorySegments)
+-   [Stack Frames: Understand stack memory management](https://organicprogrammer.com/2020/08/19/stack-frame)
+-   [The Origins of Process Memory - Exploring the Use of Various Memory Allocators in Linux C](https://www.youtube.com/watch?v=c7xf5dvUb_Q)
+-   [demystifying the secret structure you've been using all along (stack)](https://www.youtube.com/watch?v=CRTR5ljBjPM)
+-   [Smashing the Stack for Fun and Profit](https://networking.harshkapadia.me/files/tls/smashing-the-stack-for-fun-and-profit.pdf) ([UCB hosted](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf))
+-   [do you understand how "return" works?](https://www.youtube.com/watch?v=e46wHUjNDjE)
 
 ### Memory Bandwidth
 
