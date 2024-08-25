@@ -184,10 +184,24 @@
 -   [What and where are the stack and heap?](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
 -   [Memory Segments](https://www.cs.colostate.edu/~cs253/Fall20/Lecture/MemorySegments)
 -   [Stack Frames: Understand stack memory management](https://organicprogrammer.com/2020/08/19/stack-frame)
+-   BSS
+    -   BSS = Block Started by Symbol
+    -   [Why is the .bss segment required?](https://stackoverflow.com/questions/9535250/why-is-the-bss-segment-required)
+    -   [Wikipedia: BSS in C](https://en.wikipedia.org/wiki/.bss#BSS_in_C)
+    -   What happens when a variable in the BSS section is assigned a value?
+        -   Unintialized variables (Eg: `char arr[20];`, `int num_1;`) are stored in the BSS (Block Started by Symbol) section of an [ELF file](#elf).
+        -   In [the ELF file](#elf), variables in the BSS section don't occupy any space other than the space required to describe the variable itself, i.e., any of the space requested to be allocated for the variable is not allocated.
+            -   Eg: If `char arr[5000];` is declared, then it will be stored in the BSS section, but will only occupy a few bytes required to describe the variable itself and will NOT occupy 5000 bytes of space in the file as requested in the variable declaraion.
+        -   Once the ELF is executed, the variables in the BSS section will be mapped to the BSS segment (in the virtual address space) of the process in the RAM by the Loader.
+        -   The variables in the BSS segment will be initialized to zero and will occupy the space requested.
+            -   Eg: Continuing the previous example, `char arr[5000];` will now occupy 5000 bytes of requested space in the BSS segment of the process.
+            -   Once the process has been loaded in the memory (i.e., we start dealing with segments), the difference between the 'Data' and 'BSS' sections becomes immaterial, because the variables behave the same.
 -   [The Origins of Process Memory - Exploring the Use of Various Memory Allocators in Linux C](https://www.youtube.com/watch?v=c7xf5dvUb_Q)
 -   [demystifying the secret structure you've been using all along (stack)](https://www.youtube.com/watch?v=CRTR5ljBjPM)
 -   [Smashing the Stack for Fun and Profit](https://networking.harshkapadia.me/files/tls/smashing-the-stack-for-fun-and-profit.pdf) ([UCB hosted](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf))
 -   [do you understand how "return" works?](https://www.youtube.com/watch?v=e46wHUjNDjE)
+-   [More on compilers](https://dev.harshkapadia.me/resources#c:~:text=C%20or%20C%2B%2B-,Compilers,-GCC%20vs%20Clang)
+    -   'Compilers' bullet point under the 'C' heading in the dev project
 
 ### Memory Bandwidth
 
