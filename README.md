@@ -175,11 +175,13 @@
 
 ### Memory Layout and Compilers
 
--   [Buffer Overflow 3: An Assembly Language](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow1b.html)
--   [Buffer Overflow 4: A Compiler, Assembler, Linker & Loader](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow1c.html)
--   [Buffer Overflow 5: C/C++ Function Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2.html)
--   [Buffer Overflow 6: The Function Stack](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2a.html)
--   [Buffer Overflow 7: The Stack Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow3.html)
+-   [Compiler, Assembler, Linker and Loader: A Brief Story](https://www.tenouk.com/ModuleW.html)
+    -   [Buffer Overflow 3: An Assembly Language](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow1b.html)
+    -   [Buffer Overflow 4: A Compiler, Assembler, Linker & Loader](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow1c.html)
+    -   [Buffer Overflow 5: C/C++ Function Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2.html)
+    -   [Buffer Overflow 6: The Function Stack](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2a.html)
+    -   [Buffer Overflow 7: The Stack Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow3.html)
+-   Going over all compilation steps: [github.com/HarshKapadia2/compilation-examples](https://github.com/HarshKapadia2/compilation-examples)
 -   [Memory Layout of C Programs](https://www.geeksforgeeks.org/memory-layout-of-c-program)
 -   [What and where are the stack and heap?](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
 -   [Memory Segments](https://www.cs.colostate.edu/~cs253/Fall20/Lecture/MemorySegments)
