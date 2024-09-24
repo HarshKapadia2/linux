@@ -181,6 +181,7 @@
     -   [Buffer Overflow 5: C/C++ Function Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2.html)
     -   [Buffer Overflow 6: The Function Stack](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow2a.html)
     -   [Buffer Overflow 7: The Stack Operation](https://www.tenouk.com/Bufferoverflowc/Bufferoverflow3.html)
+-   [Anatomy of a Program in Memory](https://manybutfinite.com/post/anatomy-of-a-program-in-memory)
 -   Going over all compilation steps: [github.com/HarshKapadia2/compilation-examples](https://github.com/HarshKapadia2/compilation-examples)
 -   [Memory Layout of C Programs](https://www.geeksforgeeks.org/memory-layout-of-c-program)
 -   [What and where are the stack and heap?](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
