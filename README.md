@@ -24,6 +24,7 @@
     -   [Memory Bandwidth](#memory-bandwidth)
     -   [DIMM](#dimm)
     -   [Memory Interleaving](#memory-interleaving)
+-   [File descriptors](#file-descriptors)
 -   [Niceness](#niceness)
 -   [Context Switch](#context-switch)
 -   [Protection Rings and Minix](#protection-rings-and-minix)
@@ -47,7 +48,7 @@
 -   [What is POSIX? Why Does it Matter to Linux/UNIX Users?](https://itsfoss.com/posix)
 -   [C programming](https://dev.harshkapadia.me/resources#c)
 -   [Networking](https://networking.harshkapadia.me/linux)
--   [Operating System Boot Process](os-boot-process.md)
+-   [The boot process (booting, OS installation, GRUB, UEFI, etc.)](boot.md)
 -   [Linux source code cross reference](https://elixir.bootlin.com/linux/v6.6.8/source)
 -   [Latency numbers every programmer should know](https://gist.github.com/hellerbarde/2843375)
 -   [Assembly](https://github.com/HarshKapadia2/assembly)
@@ -80,6 +81,7 @@
 -   [What is the difference between `/dev/sda` and `/dev/hda`?](https://unix.stackexchange.com/questions/175848/what-is-the-difference-between-dev-sda-and-dev-hda)
 -   [Names for ATA and SATA disks in Linux](https://unix.stackexchange.com/questions/2447/names-for-ata-and-sata-disks-in-linux)
 -   [How to list disks, partitions and filesystems in Linux?](https://unix.stackexchange.com/questions/157154/how-to-list-disks-partitions-and-filesystems-in-linux)
+-   [Understanding File Systems and Partition Schemes: FAT, exFAT, NTFS, MBR, and GPT Explained](https://freedium.cfd/https://medium.com/@techynilesh/understanding-file-systems-and-partition-schemes-fat-exfat-ntfs-mbr-and-gpt-explained-4b8a72b7fba2)
 
 ### Mounting, Partitioning and Formatting
 
@@ -222,6 +224,12 @@
 
 -   [Interleaved memory](https://en.wikipedia.org/wiki/Interleaved_memory)
 -   [What is Memory Interleaving? & Advantages](https://datatrained.com/post/memory-interleaving)
+
+## File Descriptors
+
+-   [What are file descriptors, explained in simple terms?](https://stackoverflow.com/questions/5256599/what-are-file-descriptors-explained-in-simple-terms)
+-   [Here is all you need to know about File Descriptors in linux](https://medium.com/@dhar.ishan04/here-is-all-you-need-to-know-about-file-descriptors-in-linux-d93f05166026)
+-   [Close File Descriptors in Bash](https://www.baeldung.com/linux/bash-close-file-descriptors)
 
 ## Niceness
 
