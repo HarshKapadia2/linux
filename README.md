@@ -189,6 +189,7 @@
 -   [What and where are the stack and heap?](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap)
 -   [Memory Segments](https://www.cs.colostate.edu/~cs253/Fall20/Lecture/MemorySegments)
 -   [Stack Frames: Understand stack memory management](https://organicprogrammer.com/2020/08/19/stack-frame)
+    -   [Why do I get a segfault in C from declaring a large array on the stack?](https://stackoverflow.com/questions/3144135/why-do-i-get-a-segfault-in-c-from-declaring-a-large-array-on-the-stack)
 -   BSS
     -   BSS = Block Started by Symbol
     -   [Why is the .bss segment required?](https://stackoverflow.com/questions/9535250/why-is-the-bss-segment-required)
