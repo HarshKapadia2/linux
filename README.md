@@ -9,6 +9,7 @@
 -   [Shell Identification and Change](#shell-identification-and-change)
 -   [Disks and Partitions](#disks-and-partitions)
     -   [Mounting, Partitioning and Formatting](#mounting-partitioning-and-formatting)
+-   [BIOS and UEFI](#bios-and-uefi)
 -   [AMD](#amd)
     -   [AMD History](#amd-history)
 -   [Systemctl](#systemctl)
@@ -91,6 +92,10 @@
 -   [Deleting All Partitions From the Command Line](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
 -   [How to Format Disk Partitions in Linux](https://phoenixnap.com/kb/linux-format-disk)
 -   [Quickest way to wipe an SSD clean of all its partitions for repartitioning in Linux?](https://superuser.com/questions/1284450/quickest-way-to-wipe-an-ssd-clean-of-all-its-partitions-for-repartitioning-in-li)
+
+## BIOS and UEFI
+
+-  [Talking about what's in a Server Bios with AMD](https://www.youtube.com/watch?v=1C7P-V05SgQ)
 
 ## AMD
 
