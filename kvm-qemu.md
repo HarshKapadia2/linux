@@ -2,6 +2,7 @@
 
 -   KVM: Kernel-based Virtual Machine
 -   QEMU: Quick Emulator
+-   [KVM/QEMU setup scripts and instructions](https://github.com/HarshKapadia2/dotfiles/tree/main/kvm-qemu)
 -   [Containers vs. virtual machines](https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms)
 -   [What is a Hypervisor?](https://en.wikipedia.org/wiki/Hypervisor)
 -   [KVM hypervisor: a beginner's guide](https://ubuntu.com/blog/kvm-hyphervisor)
