@@ -65,7 +65,7 @@
 
 ## KVM and QEMU
 
--   [Kernel-based Virtual Machine (KVM) and Quick Emulator (QEMU)](kvm-qemu.md)
+-   [A Practical Guide to Using KVM/QEMU](kvm-qemu.md)
 
 ## Shell Identification and Change
 
