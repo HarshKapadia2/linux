@@ -2,7 +2,7 @@
 
 Published on: 5th July 2025
 
-Last updated: 5th July 2025
+Last updated: 7th July 2025
 
 [Back home](README.md)
 
@@ -64,7 +64,7 @@ NOTE: This guide is for Ubuntu and has been tested on an Ubuntu 24.04.2 LTS (Lin
 ## Components
 
 -   KVM
-    -   [Kernel-based Virtual Machine](https://linux-kvm.org)
+    -   In this article's context, KVM stands for [Kernel-based Virtual Machine](https://linux-kvm.org) and **not** [Keyboard, Video and Mouse](https://en.wikipedia.org/wiki/Rackmount_KVM).
     -   It is a Linux kernel module available on all Linux distributions that enables virtualization.
     -   It is a hypervisor.
     -   It enables VMs to directly use (passthrough) CPU cores and RAM with complete isolation/separation/privatization from the host OS and the other guests on the host, using CPU instruction set extensions like AMD-V or Intel-VT.
