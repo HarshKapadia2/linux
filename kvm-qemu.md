@@ -2,7 +2,7 @@
 
 Published on: 5th July 2025
 
-Last updated: 7th July 2025
+Last updated: 4th August 2025
 
 [Back home](README.md)
 
@@ -234,7 +234,7 @@ network:
 
 Once a Netplan file in the format above has been created, these changes need to be applied for them to take effect.
 
-The following command will apply the changes in the Netplan file and there will be a momentary loss in host OS network connectivity. (In case the host doesn’t come back up in a few minutes, use the server’s BMC KVM to revert back to the original file and run the command below. Expect a momentary loss in host OS network connectivity once again.)
+The following command will apply the changes in the Netplan file and there will be a loss in host OS network connectivity for a few minutes. The local OS (i.e., the OS from which the host OS is accessed) might have to have its DNS cache flushed to recognize the host OS's IP address change caused by the following command. (In case the host doesn’t come back up in a few minutes, use the server’s BMC KVM to revert back to the original file and run the command below. Expect a momentary loss in host OS network connectivity once again.)
 
 ```bash
 $ sudo netplan apply
