@@ -2,7 +2,7 @@
 
 Published on: 5th July 2025
 
-Last updated: 4th August 2025
+Last updated: 11th August 2025
 
 [Back home](README.md)
 
@@ -157,7 +157,7 @@ NOTE: VMs have to be assigned networks while creation, so both types of networks
 
 #### NAT Setup
 
-By default, KVM creates a private subnet using a virtual bridge interface (e.g.: virbr0) and assigns IPs to VMs from that subnet. This is a NATed (Network Address Translated) setup.
+By default, KVM creates a private subnet using a virtual bridge interface (e.g.: `virbr0`) and assigns IPs to VMs from that subnet. This is a NATed (Network Address Translated) setup.
 
 As per a typical NAT setup, VMs are assigned private IP addresses, so they can communicate with the world outside the host machine, but the outside world cannot get to them directly via their IP address. (VMs within the private subnet can still communicate with each other’s IP address.)
 
@@ -217,19 +217,19 @@ network:
             dhcp4: true
             dhcp-identifier: mac
         eno2: # Physical interface
-            dhcp4: true
-            dhcp-identifier: mac
+            dhcp4: false
     bridges:
         br0:
             dhcp4: true
             dhcp-identifier: mac
             interfaces:
-                - eno2
-        br1: # Optional bridge in case VMs need multiple interfaces
-            dhcp4: true
-            dhcp-identifier: mac
-            interfaces:
                 - eno1
+        br1: # Optional: Additional bridge in case VMs need multiple interfaces
+            dhcp4: false
+			addresses:
+				- 192.168.0.1/24 # This bridge has a static IP address and the bridge has to be given the IP, not the interface (`eno2`)
+            interfaces:
+                - eno2
 ```
 
 Once a Netplan file in the format above has been created, these changes need to be applied for them to take effect.
@@ -241,6 +241,8 @@ $ sudo netplan apply
 ```
 
 Reboot the system and then confirm that the bridge mentioned in the Netplan file is visible in the output of the `ip a` command.
+
+NOTE: Details to add multiple/additional network interfaces to a VM can be found in the '[virsh](#virsh)' and '[Spinning Up VMs Using a CLI - `virt-install` Only](#spinning-up-vms-using-a-cli---virt-install-only)' sections below.
 
 ##### Configuring KVM/QEMU With the Bridged Network
 
@@ -636,11 +638,40 @@ NOTE: virsh calls VMs ‘domains’.
     -----------------------------------------------
      default      active   yes         yes
      hostbridge   active   yes         yes
+
     $ virsh net-define /path/to/network/definition/file.xml
+
     $ virsh net-start <network_name>
+
     $ virsh net-autostart <network_name>
+
     $ virsh net-dhcp-leases <network_name>
     ```
+
+    -   Add network interface to VM post creation
+
+        -   Run the following command to open an editor with the machine's hardware description XML file.
+
+            ```bash
+            # Stop the VM and then execute the following command
+            $ virsh edit <vm_name_from_virsh_list>
+            ```
+
+        -   In the editor that pops up, add the below `intrefaces` snippet within the `devices` section, below the existing network interface. (Feel free to use a random MAC address or just copy over the existing one and modify the last few characters. Also, make sure to use a unique bus number by choosing a bus number not in use in the file.)
+
+            ```xml
+            <devices>
+            <!-- ... -->
+            <!-- Paste the below `interface` snippet in the file, within the `devices` section -->
+                <interface type='network'>
+                	<mac address='52:54:00:1e:59:8c'/>
+                	<source network='maasbridge'/> <!-- Value of `source` and other options can be found at https://libvirt.org/formatdomain.html#network-interfaces -->
+                	<model type='virtio'/>
+                	<address type='pci' domain='0x0000' bus='0x07' slot='0x00' function='0x0'/>
+                </interface>
+            <!-- ... -->
+            </devices>
+            ```
 
 -   Check VNC port
 
