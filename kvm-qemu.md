@@ -201,8 +201,6 @@ A sample Netplan file (`50-netplan.yaml`):
 ```yaml
 # Sample Netplan file
 #
-# Be careful with the indentation of the YAML.
-#
 # Be careful with the indentation of the YAML and use spaces instead of tabs for
 # indentation.
 #
