@@ -2,7 +2,7 @@
 
 Published on: 5th July 2025
 
-Last updated: 11th August 2025
+Last updated: 8th September 2025
 
 [Back home](README.md)
 
@@ -201,6 +201,8 @@ A sample Netplan file (`50-netplan.yaml`):
 ```yaml
 # Sample Netplan file
 #
+# Be careful with the indentation of the YAML.
+#
 # Uses systemd-networkd over NetworkManager as it is recommended for simple server setups.
 #
 # Bridges are only required if VMs need to be operated in bridged mode and not
@@ -226,8 +228,15 @@ network:
                 - eno1
         br1: # Optional: Additional bridge in case VMs need multiple interfaces
             dhcp4: false
-			addresses:
-				- 192.168.0.1/24 # This bridge has a static IP address and the bridge has to be given the IP, not the interface (`eno2`)
+            addresses:
+                - 192.168.0.1/24 # This bridge has a static IP address and the bridge has to be given the IP, not the interface (`eno2`)
+            routes: # Optional
+                - to: default
+                  via: 192.168.0.254 # Gateway of the subnet
+            nameservers: # Optional
+                addresses: # The IP address(es) of the DNS servers in the network
+                    - 192.168.77.77
+                    - 192.168.88.88
             interfaces:
                 - eno2
 ```
