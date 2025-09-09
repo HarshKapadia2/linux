@@ -203,7 +203,11 @@ A sample Netplan file (`50-netplan.yaml`):
 #
 # Be careful with the indentation of the YAML.
 #
-# Uses systemd-networkd over NetworkManager as it is recommended for simple server setups.
+# Be careful with the indentation of the YAML and use spaces instead of tabs for
+# indentation.
+#
+# Uses systemd-networkd over NetworkManager as it is recommended for simple
+# server setups.
 #
 # Bridges are only required if VMs need to be operated in bridged mode and not
 # their default NAT mode. This is for VMs spun up using KVM/QEMU.
