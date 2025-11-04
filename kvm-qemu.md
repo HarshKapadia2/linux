@@ -2,7 +2,7 @@
 
 Published on: 5th July 2025
 
-Last updated: 8th September 2025
+Last updated: 4th November 2025
 
 [Back home](README.md)
 
@@ -218,16 +218,18 @@ network:
     renderer: networkd
     ethernets:
         eno1: # Physical interface
-            dhcp4: true
+            dhcp4: true # Keep 'false' if interface is included in a bridge
             dhcp-identifier: mac
         eno2: # Physical interface
+            dhcp4: false
+        eno3: # Physical interface
             dhcp4: false
     bridges:
         br0:
             dhcp4: true
             dhcp-identifier: mac
             interfaces:
-                - eno1
+                - eno2
         br1: # Optional: Additional bridge in case VMs need multiple interfaces
             dhcp4: false
             addresses:
@@ -240,7 +242,7 @@ network:
                     - 192.168.77.77
                     - 192.168.88.88
             interfaces:
-                - eno2
+                - eno3
 ```
 
 Once a Netplan file in the format above has been created, these changes need to be applied for them to take effect.
@@ -253,7 +255,7 @@ $ sudo netplan apply
 
 Reboot the system and then confirm that the bridge mentioned in the Netplan file is visible in the output of the `ip a` command.
 
-NOTE: Details to add multiple/additional network interfaces to a VM can be found in the '[virsh](#virsh)' and '[Spinning Up VMs Using a CLI - `virt-install` Only](#spinning-up-vms-using-a-cli---virt-install-only)' sections below.
+NOTE: Details to add multiple/additional network interfaces to a VM can be found in the '[virsh](#virsh)' and '[Spinning Up VMs Using a CLI - `virt-install` Only](#spinning-up-vms-using-a-cli---virt-install-only)' sections below. Most KVM/QEMU hardware can be modified post OS installation.
 
 ##### Configuring KVM/QEMU With the Bridged Network
 
