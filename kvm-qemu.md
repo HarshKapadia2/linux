@@ -2,7 +2,7 @@
 
 Published on: 5th July 2025
 
-Last updated: 4th November 2025
+Last updated: 5th February 2026
 
 [Back home](README.md)
 
@@ -314,6 +314,8 @@ Invoke `virt-manager` by searching for it in the system or use the command line 
 $ sudo cp ~/.Xauthority /root # Execute this command only if there is a permissions issue with X11 forwarding
 $ virt-manager
 ```
+
+NOTE: If using [MobaXterm](https://mobaxterm.mobatek.net), then make sure to create a SSH session in MobaXterm (and check the 'X11-Forwarding' checkbox in the dialog) to ensure that the `virt-manager` GUI is visible/forwarded locally. (The `echo $DISPLAY` environment variable should automatically be set to something like `localhost:10.0` after using any GUI application like `xeyes`, `virt-manager`, etc. at least once through the MobaXterm session.)
 
 A window as seen below will appear.
 
