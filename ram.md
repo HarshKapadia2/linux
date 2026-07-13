@@ -25,7 +25,9 @@ Bank vs Memory module vs DRAM chip
 Maybe group them by platform?
 
 -   RDIMM
+-   3DS RDIMM
 -   MRDIMM
+-   Tall DIMM
 -   UDIMM
 -   CUDIMM
 -   SODIMM
